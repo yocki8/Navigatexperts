@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Noto+Sans:wght@100;300;400;500;600;700&display=swap');
+
+
+.header-cont,.body-sub-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-cont{
+    width: 100%;
+    height: 90%;
+    color: #f7f7f7;
+}
+
+.body-sub-cont{
+    width: 90%;
+    height: 90%;
+    padding: 0.3rem 0 0 0;
+    background-color: #272c33;
+    border-radius: 25px;
+}
+
+.body-heading{
+    margin: 0 0 2rem 0;
+}
+
+/* SMALL BUS IMAGE */
+.small-bus-img{
+    width: 5rem;
+    height: 3rem;
+}
+
+.small-bus-img img{
+    width: 5rem;
+    height: 3rem;
+}
+
+.body-header{
+    color:#f7f7f7;
+}
+
+.features-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    gap: 1rem;
+}
+.feature-subcont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    flex-direction: column;
+    background: #2f363f;
+    border-radius: 20px;
+    transition: background-color 0.2s linear;
+    font-family: 'Noto Sans', sans-serif !important;
+}
+.feature-subcont:hover{
+    /* background-color: rgb(65, 73, 85); */
+    background-color: #13b05b;
+}
+.feature-subcont p{
+    text-align: center;
+}
+
+.body-icons{
+    font-size: 2rem;
+}

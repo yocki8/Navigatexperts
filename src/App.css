@@ -1,38 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Noto+Sans:wght@100;300;400;500;600;700&display=swap');
+
+
+*::selection{
+  background-color: #141414;
+  color: #f7f7f7;
+}
 .App {
+  width: 100%;
+  height: 70%;
+  position: absolute;
   text-align: center;
+  background: linear-gradient(0deg, rgba(54, 170, 103, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/bg_1.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
+  width: 100%;
+  height: 8%;
   display: flex;
-  flex-direction: column;
+  padding: 1.1rem 0;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  backdrop-filter: blur(5px);
+  /* background-color: #e6e6e6c0; */
+  background-color:#272c3386;
+  position: fixed;
+  z-index: 999;
 }
 
-.App-link {
-  color: #61dafb;
+.github-icon-a{width: 100%;position: absolute;}
+
+.navbar-icon{
+  width: 100%;
+  font-size: 2.2rem;
+  color: #f7f7f7;
+  cursor: pointer;
+  margin: 0 0 0 39rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+h1{
+  font-family: 'Mooli', sans-serif !important;
+  font-size:2.5rem;
+  color: #13B05B;
+}
+h1 span{
+  /* color: #141414; */
+  color: #f7f7f7;
+  /* font-size: 4rem; */
+  padding: 100px 0 0 0;
+}
+
+h1::selection{
+  background: #141414;
+  color: #f7f7f7;
+}
+span::selection{
+  background: #13B05B;
+  color: #f7f7f7;
 }
