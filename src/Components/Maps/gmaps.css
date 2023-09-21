@@ -1,0 +1,10 @@
+.main-map-cont {
+  height: 100vh;
+  width: 100vw;
+  margin: 4rem 0 0 0;
+}
+  
+.map-container {
+  height: 100%;
+  width: 100%;
+}

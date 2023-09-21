@@ -1,36 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Noto+Sans:wght@100;300;400;500;600;700&display=swap');
 
+*{box-sizing: border-box;}
 
 *::selection{
-  background-color: #141414;
-  color: #f7f7f7;
+  user-select: none;
 }
 .App {
   width: 100%;
   height: 70%;
   position: absolute;
   text-align: center;
-  background: linear-gradient(0deg, rgba(54, 170, 103, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/bg_1.jpg");
-  background-size:cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
+
+/* Navbar */
 .navbar{
   width: 100%;
-  height: 8%;
+  height: 10%;
   display: flex;
-  padding: 1.1rem 0;
+  padding: 0.8rem 0;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(5px);
   /* background-color: #e6e6e6c0; */
-  background-color:#272c3386;
+  background-color:#2d473948;
   position: fixed;
   z-index: 999;
 }
+a{
+  text-decoration: none;
+}
 
-.github-icon-a{width: 100%;position: absolute;}
+.github-icon-a{
+  width: 3%;
+  position: absolute;
+  cursor:auto;
+}
 
 .navbar-icon{
   width: 100%;
@@ -41,6 +46,7 @@
 }
 
 
+/* LOGO */
 h1{
   font-family: 'Mooli', sans-serif !important;
   font-size:2.5rem;
@@ -49,7 +55,6 @@ h1{
 h1 span{
   /* color: #141414; */
   color: #f7f7f7;
-  /* font-size: 4rem; */
   padding: 100px 0 0 0;
 }
 
@@ -60,4 +65,51 @@ h1::selection{
 span::selection{
   background: #13B05B;
   color: #f7f7f7;
+}
+
+/* Footer */
+.main-footer{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--themeblack);
+  padding: 1rem 4.5rem;
+}
+
+.sub-footer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sub-footer p{
+  color: #f7f7f7;
+  font-size: 1.6rem;
+}
+
+.sub-footer span{
+  color: #c9c9c9;
+  font-size: 1rem;
+}
+
+.to-top{
+  content: " ";
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  position: absolute;
+  margin: 0 0 0 30rem;
+  background: #13B05B;
+  border-radius: 50%;
+  z-index: 50;
+}
+.to-top-icon{
+  color: #f7f7f7;
+  position: absolute;
+  margin: 0 0 0 30.75rem;
+  font-size: 2rem;
+  z-index: 51;
+  cursor: pointer;
 }

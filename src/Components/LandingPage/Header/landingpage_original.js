@@ -1,13 +1,10 @@
 import React from 'react'
 import './landingpage.css';
 import {useState} from 'react';
-import Showbus from '../../BusfilterPage/showbusstyle2';
 import {Link} from "react-router-dom";
-import { FaBusAlt } from "react-icons/fa";
 import data from '../../Search/busstops.json';
 import Bodycontent from '../Body/bodycontent';
 import { IoLocationSharp,IoHome } from "react-icons/io5";
-// import bus from '../../../assets/bus.png';
 
 
 function LandingPage(){
@@ -48,21 +45,20 @@ function LandingPage(){
     };
 
   return (<>
-        
       <div className="main-cont">
 
         {/* Toggle Container */}
 
         {/* IMG */}
         {/* <div className="bus-img">
-            <img src={bus}  alt="Himachal Bus" />
+            <img src="https://drive.google.com/file/d/1wQruYyy3wWxuOVSlKwW6M6mpmoPga9gC/view?usp=sharing"   alt="Himachal Bus" />
         </div> */}
 
         <div className="main-toggle-cont">
 
             <div className={`toggle-switch ${activeIndex === 0 ? 'active' : ''}`}
         onClick={() => handleToggleClick(0)}>
-                <p className="toggle-text">Bus No.</p>
+                <p className="toggle-text">Bus ID</p>
             </div>
             <div className={`toggle-switch ${activeIndex === 1 ? 'activeroute' : ''}`}
         onClick={() => handleToggleClick(1)}>
@@ -72,20 +68,8 @@ function LandingPage(){
         </div>
 
         {/* Search Box Container */}
-        <div className="sub-cont" style={{ width: activeIndex ? "50%" : "40%", transition: "all 0.3s linear" }}>
-            
-            <div className="left-items-2" style={{ display: activeIndex ? "none" : "flex", transition: "all 0.2s linear" }}>
-                <div className="main-source-cont">
-                    <div className="fields source-f-2">
-                        <div className="icon-bg"></div>
-                        <FaBusAlt className='icons-2'/>
-                        <hr className="hr-2" />
-                        <input type="text" className="source-input-2" placeholder='BUS ID' value={source} onChange={sourceonChange}/>
-                    </div>
-                </div>
-            </div>
-            
-            <div className="left-items" style={{ display: activeIndex ? "flex" : "none", transition: "all 0.2s linear" }}>
+        <div className="sub-cont"  style={{ width: activeIndex ? "50%" : "40%", transition: "all 0.2s linear" }}>
+            <div className="left-items">
 
                 <div className="main-source-cont">
 
@@ -142,12 +126,10 @@ function LandingPage(){
                 </div>
 
             </div>
-
             <div className="right-items">
                 <div className="fields Search-btn">
-                <Link to="/buses">
+                <Link to="/track">
                     <button className="Search" onClick={() => onGo(source,destination)}>Search</button>
-                    <Showbus source={source} destination={destination} />
                 </Link>
                 </div>
             </div>

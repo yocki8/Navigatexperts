@@ -26,17 +26,6 @@
     margin: 0 0 2rem 0;
 }
 
-/* SMALL BUS IMAGE */
-.small-bus-img{
-    width: 5rem;
-    height: 3rem;
-}
-
-.small-bus-img img{
-    width: 5rem;
-    height: 3rem;
-}
-
 .body-header{
     color:#f7f7f7;
 }
@@ -59,7 +48,7 @@
     cursor: pointer;
     flex-direction: column;
     background: #2f363f;
-    border-radius: 20px;
+    border-radius: 25px;
     transition: background-color 0.2s linear;
     font-family: 'Noto Sans', sans-serif !important;
 }

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Noto+Sans:wght@100;300;400;500;600;700&display=swap');
+
+
+.bus-main-cont{
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 80px 0 10rem 0;
+    /* background: url(../../assets/modern-bus.png); */
+    background: url(../../assets/bus.png);
+    background-size:cover;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+}
+
+.bus-sub-cont{
+    width: 85%;
+    height: 100%;
+    max-height: 30rem;
+    background: #F4F4F4;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.bus-main-heading{
+    font-size: 3rem;
+    margin: 0;
+    color: #333333;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Mooli', sans-serif !important;
+}
+
+.bus-card{
+    width: 80%;
+    height: 35%;
+    color: #333333;
+    /* background: #D9D9D9; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.2s linear ;
+    cursor: pointer;
+    min-height: 100px;
+    border: 1px solid #adadad8f;
+    backdrop-filter: blur(10px);
+}
+
+.bus-card:hover{
+    box-shadow: 1px 1px 40px 1px #33333371;
+    /* box-shadow: 0px 0px 30px 1px #00ff777e; */
+    /* border: 1px solid #00ff77; */
+}
+
+.bus-left-item{
+    width: 15%;
+    display: flex;
+    gap: 2rem;
+    justify-content: right;
+    align-items: center;
+}
+
+.total span{
+    font-weight: 700;
+}
+
+.bus-mid-item{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bus-right-item{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bus-right-item button{
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #f7f7f7;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    background: #333333;
+    transition: all 0.2s linear;
+}
+.bus-right-item button:hover{
+    box-shadow: 0px 0px 30px 1px #33333346;
+}
+
+.bus-time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.bus-route{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.bus-hr{
+    width: 1px;
+    height: 1.5rem;
+    border: none;
+    background: #333333;
+    margin: 5px 0;
+}
+
+.bus-logo-bg{
+    width: 5rem;
+    height: 5rem;
+    background: #13B05B;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.bus-logo-bg:hover{
+    background: #333333;
+}
+
+.bus-icon,.bus-logo-text{
+    font-size: 2rem;
+    color: #f7f7f7;
+}
+
+.bus-logo-text{
+    font-size: 0.9rem;
+}
+.source:hover, .dest:hover{
+    color: #13B05B;
+}

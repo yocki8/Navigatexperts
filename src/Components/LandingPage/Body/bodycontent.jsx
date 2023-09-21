@@ -19,7 +19,7 @@ const Bodycontent = () => {
           
           <div className="feature-subcont">
             <FaLocationCrosshairs className='body-icons'/>
-            <h2>Reatime Tracking</h2>
+            <h2>Real-time <br /> Tracking</h2>
             <p>Precise live location tracking of currently running buses using GPS module.</p>
           </div>
 
